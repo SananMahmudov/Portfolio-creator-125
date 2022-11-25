@@ -1,0 +1,53 @@
+:root{
+    --primary-black:#000
+}
+
+@import url('./reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+a{
+    text-decoration: none;
+
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row; /*bu istiqameti mueyyenleshdirir: justify-content align-items*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 7rem;
+}
+
+.fa-bars{
+    display: none;
+}
+
+header .nav-links a{ 
+    color: var(--primary-black);
+}
+
+@media (max-width:950px) {
+   
+     header{
+        padding-left: 22px;
+        padding-right: 22px;
+     }
+   
+    /* child selector*/
+    header>nav {
+        display: none;
+    }
+    .fa-bars{
+        display: flex;
+    }
+}
+
