@@ -1,17 +1,17 @@
-:root{
-    --primary-black:#000
+:root {
+    --primary-black: #000
 }
 
 @import url('./reset.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-a{
+a {
     text-decoration: none;
 
 }
 
-html{
+html {
     font-size: 16px;
 }
 
@@ -21,35 +21,85 @@ body {
 
 header {
     display: flex;
-    flex-direction: row; /*bu istiqameti mueyyenleshdirir: justify-content align-items*/
+    flex-direction: row;
+    /*bu istiqameti mueyyenleshdirir: justify-content align-items*/
     align-items: center;
     justify-content: space-between;
     padding: 2.5rem 7rem;
 }
 
-.fa-bars{
+.fa-bars {
     display: none;
+    cursor: pointer;
 }
 
-header .nav-links a{ 
+header .nav-links a {
     color: var(--primary-black);
 }
 
 @media (max-width:950px) {
-   
-     header{
+
+    header {
         padding-left: 22px;
         padding-right: 22px;
-     }
-   
+    }
+
     /* child selector*/
     header>nav {
         display: none;
     }
-    .fa-bars{
+
+    .fa-bars {
         display: flex;
         font-size: 2rem;
     }
-    
+
+}
+
+/* INDTRODUCTION SECTION*/
+
+.introduction {
+    padding: 0rem 7.03rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.intro-left-side {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-top: 60px;
+}
+
+.intro-left-side>h1 {
+    font-size: 4rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.intro-left-side>h1>span {
+    color: #FF8A56;
+}
+
+.intro-left-side p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.intro-right-side {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0px;
+}
+
+.bookacall>a {
+    color: black;
+}
+
+.bookacall {
+    padding-top: 17px;
 }
 
