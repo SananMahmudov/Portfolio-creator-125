@@ -48,6 +48,8 @@ header .nav-links a{
     }
     .fa-bars{
         display: flex;
+        font-size: 2rem;
     }
+    
 }
 
