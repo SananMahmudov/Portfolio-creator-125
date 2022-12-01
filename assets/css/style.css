@@ -5,9 +5,9 @@
 @import url('./reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-.nav-links a{
- font-size: 1rem;
- margin-right: 20px;
+.nav-links a {
+    font-size: 1rem;
+    margin-right: 20px;
 }
 
 a {
@@ -21,6 +21,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -107,41 +108,44 @@ header .nav-links a {
     padding-top: 17px;
 }
 
-.bookacall button{
+.bookacall button {
     background-color: black;
-    width: 151px; height: 58px;
+    width: 151px;
+    height: 58px;
     color: white;
     size: 18px;
     cursor: pointer;
 }
 
-.bookacall>a{
+.bookacall>a {
     margin-left: 20px;
 }
 
 @media(max-width:950px) {
-  .introduction{
-    padding: 0px;
-  }
-  .introduction .intro-left-side{
-    min-width: 500px;
-    text-align: center;
-  }
+    .introduction {
+        padding: 0px;
+    }
+
+    .introduction .intro-left-side {
+        min-width: 500px;
+        text-align: center;
+    }
 }
 
-/* TRUSTED-BY-SECTION */
+/* TRUSTED-BY-SECTION START */
 
-.trusted-by{
+.trusted-by {
     font-size: 18px;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-   
+
 }
-.trusted-by-companies{
+
+.trusted-by-companies {
     display: flex;
     justify-content: space-around;
     padding: 45px;
-  
+
 }
 
 @media(max-width:570px) {
@@ -151,8 +155,66 @@ header .nav-links a {
     }
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     .trusted-by-company:not(:first-child) {
         display: none;
-    }   
     }
+}
+/*TRUSTED-BY-SECTION END*/
+
+
+
+/*SERVICES SECTION START*/
+
+.services-section{
+    padding-top: 76.27px;
+}
+
+.services-section h6{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FF5E69;
+
+}
+
+.services-section h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.services-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+ul{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.service-card p{
+    color: #666666;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.service-card{
+    min-width: 250px;
+}
+
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+/*SERVICES SECTION END*/
+
