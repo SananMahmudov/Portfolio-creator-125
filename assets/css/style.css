@@ -21,7 +21,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* overflow-x: hidden; */
+    /* overflow-x: hidden;*/
 }
 
 header {
@@ -160,17 +160,18 @@ header .nav-links a {
         display: none;
     }
 }
+
 /*TRUSTED-BY-SECTION END*/
 
 
 
 /*SERVICES SECTION START*/
 
-.services-section{
+.services-section {
     padding-top: 76.27px;
 }
 
-.services-section h6{
+.services-section h6 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -180,14 +181,14 @@ header .nav-links a {
 
 }
 
-.services-section h1{
+.services-section h1 {
     text-align: center;
     font-size: 50px;
     font-weight: 700;
     margin-top: 20px;
 }
 
-.services-cards{
+.services-cards {
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
@@ -195,26 +196,152 @@ header .nav-links a {
     margin-top: 40px;
 }
 
-ul{
+ul {
     font-weight: 700;
     font-size: 16px;
 }
 
-.service-card p{
+.service-card p {
     color: #666666;
     font-weight: 400;
     font-size: 16px;
 }
 
-.service-card{
+.service-card {
     min-width: 250px;
 }
 
-ul{
+ul {
     list-style-type: square;
     list-style-position: inside;
     padding-left: 0px;
 }
 
-/*SERVICES SECTION END*/
+/* SERVICES SECTION END */
 
+
+
+/* PROJECTS-CARDS START */
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+   padding-left: 83px;
+    /*padding-top: 76px;*/
+}
+
+.projects-section h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3C46FF;
+    font-size: 14px;
+    letter-spacing: 4px;
+  
+}
+
+.projects-section h6{
+    padding-bottom: 20px;
+}
+
+.projects-section h1 {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.view-all-projects {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 112px;
+
+
+}
+
+.view-all-projects button {
+    width: 201px;
+    height: 58px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.view-all-projects h1 {
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.project-card-bottom a{
+    color: black;
+}
+
+.projects-section h6 {
+    color: #B16CEA;
+    font-size: 22px;
+    font-weight: 700px;
+    letter-spacing: 4px;
+}
+
+.projects-cards {
+    display: flex;
+}
+
+.project-card {
+    min-width: 486px;
+  display: inline-block;
+}
+
+.project-card:nth-child(3)>img {
+    width: 100%;
+}
+
+.project-card-bottom {
+    padding: 24px;
+    list-style: inside;
+}
+
+.slider-btns button {
+    width: 54px;
+    height: 54px;
+}
+
+.slider-btns {
+    align-self: flex-end;
+    padding-right: 112px;
+    padding-top: 26px;
+}
+
+@media(max-width:1386px){
+   .project-card:nth-child(3) {
+    display: none
+   }
+    
+}
+@media(max-width:1060px){
+    .project-card:nth-child(2){
+        display: none;
+    }
+    /* .view-all-projects{
+        text-align: center;
+    } */
+
+}
+
+@media(max-width:1060px){
+    .project-card:nth-child(1){
+        justify-content: space-between;
+        
+    }
+}
+ 
+@media(max-width:768px){
+    .projects-section{
+        padding-left: 15px;
+    }
+}
+
+.project-card{
+    min-width: 400px;
+}
+  
+
+    
+    /* PROJECTS-CARDS END */
