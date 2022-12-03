@@ -638,3 +638,77 @@ ul {
 }
 
 /* EDUCCATION-WORK-SECTION END */
+
+
+
+
+/* TESTIMONIALS SECTION START */
+
+.testimonials-section{
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 113px; */
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+
+.testimonial-left-side h1{
+    font-size: 22px;
+    color: #4353FF;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.testimonial-left-side h2{
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    min-width: 485px;
+
+}
+
+.testimonial-right-side{
+    padding-top: 200px;
+    min-width: 415px;
+}
+
+.testimonial-right-side p{
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+.testimonial-right-side .person-name h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.testimonial-right-side .person-name h6{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -30px;
+}
+
+.testimonials-section .testimonial-right-side .slider-btns button{
+    width: 54px;
+    height: 54px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.testimonials-section .testimonial-right-side .slider-btns{
+    align-self: flex-end;
+  display: flex;
+
+}
+   
+@media(msc-width:500px){
+    .testimonials-section .left-side{
+        padding-left: 0px;
+        display: flex;
+        justify-content: space-between;
+   
+       
+    }
+}
+/* TESTIMONIALS SECTION END */
