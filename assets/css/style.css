@@ -433,3 +433,91 @@ ul {
 
 
 /* LATEST-BLOGS SECTION END */
+
+/* PRODUCT-DESIGNER-SECTION START */
+
+.product-designer-section{
+    padding: 73px 113px 79px;
+}
+
+.product-designer-section h6{
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: #FF5E69;
+    font-weight: 700;
+}
+
+.thats-me h1{
+    font-size: 54px;
+    font-weight: 700;
+    min-width: 273px;
+}
+
+.thats-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.thats-me p{
+    font-size: 22px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 40px;
+    min-width: 625px;
+  
+}
+.thats-me-image{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thats-me-image:nth-child(1),
+.thats-me-image:nth-child(3){
+    min-width: 338px;
+}
+
+.thats-me-image:nth-child(2){
+    min-width: 507px;
+}
+
+.thats-me-image:nth-child(1),
+.thats-me-image:nth-child(2){
+    margin-right: 16px;
+}
+.thats-me-image img{
+    width: 100%;
+}
+
+.thats-me-image .right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+@media(max-width:1089px){
+    .product-designer-section{
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .thats-me p{
+        min-width: 476px;
+        margin-top: 40px;
+    }
+    .product-designer-section h6{
+        margin-bottom: 20px;
+    }
+
+    .thats-me-image{
+        justify-content: center;
+    }
+
+    .thats-me-image .center{
+        width: 338px;
+    }
+}
+/* PRODUCT-DESIGNER-SECTION END */
